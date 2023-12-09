@@ -4,17 +4,15 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-ui-interface',
+  templateUrl: './ui-interface.component.html',
+  styleUrls: ['./ui-interface.component.css']
 })
-export class AppComponent {
-  showIdentifVoiture: boolean = false;
+export class UiInterfaceComponent {
 
   constructor(private router: Router) {}
 
   navigateToIdentifVoiture() {
-    this.showIdentifVoiture = true;
     this.router.navigate(['/identif-voiture']);
   }
 }
