@@ -1,57 +1,58 @@
-<div class="container mt-5">
-  <h1 class="mb-4">Identification de votre véhicule</h1>
+<!-- your-component.component.html -->
+<form novalidate autocomplete="off" class="custom-form">
+  <div class="container max-height-main">
+    <h1 class="fs-2 fw-bold mb-5">Identification de votre véhicule</h1>
 
-  <div class="row">
-    <!-- Part 1: Choisissez le type d'immatriculation -->
-    <div class="col-md-4 mb-4">
-      <h3>1 - Choisissez le type d'immatriculation</h3>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <!-- Your buttons here -->
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id="option1"> Serie normale (TU)
-        </label>
+    <div class="row">
+      <div class="col-lg-4 card p-2">
+        <div class="d-flex align-items-center my-3">
+          <div>
+            <div class="step bg-primary d-flex justify-content-center align-items-center text-white"> 1 </div>
+          </div>
+          <p class="fw-bold mx-3">Choisissez le type d'immatriculation</p>
+        </div>
+        <div class="button-grids ml-3">
+          <div class="identificateur active"> Serie normale (TU) </div>
+          <div class="identificateur"> Régime suspensif (RS) </div>
+          <div class="identificateur"> Personnel administratif et technique (PAT) </div>
+          <div class="identificateur"> Chef de Mission diplomatique (CMD) </div>
+        </div>
       </div>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <!-- Your buttons here -->
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id=""> Serie normale (TU)
-        </label>
+
+      <div class="col-lg-4 card p-2">
+        <div class="d-flex align-items-center my-3">
+          <div>
+            <div class="step bg-primary d-flex justify-content-center align-items-center text-white"> 2 </div>
+          </div>
+          <p class="fw-bold mx-2">Ajoutez le numéro d'immatriculation</p>
+        </div>
+        <div class="ml-3">
+          <div class="d-flex mb-3">
+            <input type="tel" formControlName="registrationNumber1" class="w-5 ng-untouched ng-pristine ng-invalid" placeholder="Série" maxlength="3">
+            <div class="TUN fw-bold d-flex justify-content-center align-items-center px-4 text-bg-dark"> TU تونس </div>
+            <input type="tel" formControlName="registrationNumber2" class="w-5 ng-untouched ng-pristine ng-invalid" placeholder="Numéro" maxlength="4">
+          </div>
+        </div>
       </div>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <!-- Your buttons here -->
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id=""> Serie normale (TU)
-        </label>
-      </div>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <!-- Your buttons here -->
-        <label class="btn btn-primary">
-          <input type="radio" name="options" id=""> Serie normale (TU)
-        </label>
+
+      <div class="col-lg-4 card p-2">
+        <div class="d-flex align-items-center my-3">
+          <div>
+            <div class="step bg-primary d-flex justify-content-center align-items-center text-white"> 3 </div>
+          </div>
+          <p class="fw-bold mx-2">Ajoutez les 6 derniers chiffres de numéro de châssis</p>
+        </div>
+        <div class="ml-3 num-chassis">
+          <div class="d-flex mb-3">
+            <input type="text" placeholder="XXXXXX" maxlength="6" formControlName="lastSixDigitsOfChassisNumber" class="ng-untouched ng-pristine ng-invalid">
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Part 2: Ajoutez le numéro d'immatriculation -->
-    <div class="col-md-4 mb-4">
-      <h3>2 - Ajoutez le numéro d'immatriculation</h3>
-      <div class="form-group">
-        <label for="serie">Série</label>
-        <input type="text" class="form-control" id="serie" placeholder="TU تونس">
-      </div>
-      <div class="form-group">
-        <label for="numero">Numéro</label>
-        <input type="text" class="form-control" id="numero" placeholder="3">
-      </div>
-    </div>
-
-    <!-- Part 3: Ajoutez les 6 derniers chiffres de numéro de châssis -->
-    <div class="col-md-4 mb-4">
-      <h3>3 - Ajoutez les 6 derniers chiffres de numéro de châssis</h3>
-      <div class="form-group">
-        <label for="chassis">XXXXXX</label>
-        <input type="text" class="form-control" id="chassis" placeholder="Enter 6 digits">
-      </div>
+    <div class="bottom-bar d-flex">
+      <button type="button" class="btn mx-2 border px-5">S'identifier</button>
+      <button class="btn btn-primary px-5" style="z-index: 1;" disabled>Suivant</button>
     </div>
   </div>
-
-</div>
+</form>

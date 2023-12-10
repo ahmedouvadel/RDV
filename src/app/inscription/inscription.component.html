@@ -1,0 +1,95 @@
+<form novalidate autocomplete="off" class="custom-form">
+  <div class="container max-height-main">
+    <h1 class="title">Formulaire d'identification</h1>
+    <div  class="row">
+      <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h2  class="subtitle">Informations personnelles</h2>
+        <span  class="littletitle">Tous les champs sont obligatoires.</span></div>
+        <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="marginRow">
+            <input  type="radio" id="FEMALE" name="gender" value="FEMALE" formcontrolname="gender" class="form-check-input ng-untouched ng-pristine ng-valid">
+            <label  for="FEMALE" class="form-check-label labelRadio">Madame</label>
+            <input  type="radio" id="MALE" name="gender" value="MALE" formcontrolname="gender" class="form-check-input ng-untouched ng-pristine ng-valid">
+            <label  for="MALE" class="form-check-label labelRadio">Monsieur</label>
+            <input  type="radio" id="Entreprise" name="gender" value="Entreprise" formcontrolname="gender" class="form-check-input ng-untouched ng-pristine ng-valid">
+            <label  for="Entreprise" class="form-check-label labelRadio">Entreprise</label>
+          </div>
+            <div  class="row marginRow">
+              <div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                <div  class="form-group">
+                  <label  for="prénom" class="label">Prénom <span  class="required">*</span></label>
+                  <input  type="text" id="prénom" aria-describedby="prénom" placeholder="Prénom" formcontrolname="firstName" class="form-control ng-untouched ng-pristine ng-invalid">
+                </div></div>
+                <div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                  <div  class="form-group">
+                    <label  for="Nom" class="label">Nom <span  class="required">*</span></label>
+                    <input  type="text" id="Nom" aria-describedby="Nom" placeholder="Nom" formcontrolname="lastName" class="form-control ng-untouched ng-pristine ng-invalid"></div>
+                    </div></div></div>
+                    <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <h2  class="subtitle">Informations Contact</h2>
+                      <span  class="littletitle">Tous les champs sont obligatoires.</span></div>
+                      <div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div  class="row marginRow">
+                          <div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                            <div  class="form-group">
+                              <label  for="tel" class="label">Numéro de Téléphone <span  class="required">*</span></label>
+                              <input  type="tel" id="tel" aria-describedby="tel" placeholder="Numéro de Téléphone" formcontrolname="number" maxlength="8" minlength="8" class="form-control ng-untouched ng-pristine ng-invalid"></div>
+                              </div>
+                              <div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                                <div  class="form-group">
+                                  <label  for="email" class="label">Adresse e-mail <span  class="required">*</span>
+                                  </label><input  type="email" id="email" aria-describedby="email" placeholder="Adresse e-mail" formcontrolname="email" class="form-control ng-untouched ng-pristine ng-invalid">
+                                </div></div></div></div><div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><h2  class="subtitle">Informations Véhicule</h2>
+                                  <span  class="littletitle">Tous les champs sont obligatoires.</span></div><div  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div  class="row marginRow"><div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                                      <label  for="Modéle" class="label"> Modéle <span  class="required">*</span></label>
+
+                                        <div class="ng-select-container"><div class="ng-value-container"><div class="ng-placeholder">Modéle</div>
+                                        <div role="combobox" aria-haspopup="listbox" class="ng-input" aria-expanded="false"><input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="aa611b0edc12">
+                                        </div></div><span class="ng-arrow-wrapper"><span class="ng-arrow"></span></span></div>
+                                      </div><div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                                        <label  for="Version" class="label"> Version <span  class="required">*</span></label>
+
+                                          <div class="ng-select-container"><div class="ng-value-container"><div class="ng-placeholder">Version</div>
+                                          <div role="combobox" aria-haspopup="listbox" class="ng-input" aria-expanded="false">
+                                            <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a51d4f295054" readonly=""></div></div>
+                                            <span class="ng-arrow-wrapper"><span class="ng-arrow"></span></span></div></div></div>
+                                            <div  class="row marginRow"><div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                                              <label  for="immatriculation" class="label">Type d’immatriculation
+                                                <span  class="required">*</span>
+                                              </label>
+
+                                                  <div class="ng-select-container ng-has-value"><div class="ng-value-container">
+                                                    <div class="ng-placeholder">Type d’immatriculation</div><div class="ng-value">
+                                                      <span aria-hidden="true" class="ng-value-icon left">×</span>
+                                                      <span class="ng-value-label">Serie normale (TU)</span></div>
+                                                      <div role="combobox" aria-haspopup="listbox" class="ng-input" aria-expanded="false">
+                                                        <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a914226dbb58"></div></div>
+                                                        <span class="ng-arrow-wrapper"><span class="ng-arrow"></span></span></div></div>
+                                                        <div  class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 height-inputs">
+                                                          <label  for="immatriculation" class="label">Numéro d’immatriculation <span  class="required">*</span></label>
+                                                          <div  class="d-flex"><input  type="tel" formcontrolname="registrationNumber1" style="width: 35%;" placeholder="Série" class="ng-untouched ng-pristine ng-invalid" maxlength="3">
+                                                            <div  class="TUN fw-bold d-flex justify-content-center align-items-center text-white" style="width: 30%;"> TU تونس </div>
+                                                            <input  type="tel" formcontrolname="registrationNumber2" style="width: 35%;" placeholder="Numéro" class="ng-untouched ng-pristine ng-invalid" maxlength="4"></div></div>
+                                                          </div><div  class="row marginRow"><div  class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 height-inputs"><div  class="form-group">
+                                                            <label  for="châssis" class="label">Numéro châssis <span  class="required">*</span></label>
+                                                            <input  type="text" id="châssis" aria-describedby="châssis" placeholder="Numéro du châssis" minlength="13" maxlength="17" formcontrolname="chassisNumber" class="form-control ng-untouched ng-pristine ng-invalid"></div></div></div>
+                                                            <div  class="row marginRow">
+                                                              <div  class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12">
+                                                                <div  class="form-group">
+                                                                  <label  for="registrationCertificate" class="label">Certificat d'immatriculation (carte grise)
+                                                                    <span  class="required">*</span></label>
+                                                                      <div class="img-container d-flex flex-column jusrify-content-end mt-2">
+                                                                        <div class="img-container_add w-100"><button type="button" class="btn-add">
+                                                                          <div class="d-flex flex-column align-items-center justify-content-center my-2">
+                                                                            <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                              <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20"></path>
+                                                                              <mask id="mask0_171_1699" maskUnits="userSpaceOnUse" x="3" y="3" width="14" height="17" style="mask-type: alpha;"><path fill-rule="evenodd" clip-rule="evenodd"  fill="white">
+
+                                                                              </path></mask><g mask="url(#mask0_171_1699)">
+                                                                                <rect x="0.322754" width="19.8942" height="24" fill="#E2001A"></rect></g></svg><span _ngcontent-rrj-c81="">importer images</span></div></button></div><input type="file" multiple="" accept="image/png, image/jpeg, image/jpg" max="3" maxlength="3" class="d-none"><div class="row m-0 mb-4"></div></div>
+                                                                              </div></div></div></div></div></div>
+                                                                              <div class="bottom-bar d-flex">
+                                                                                <button type="button" class="btn mx-2 border px-5">Retour</button>
+                                                                                <button type="button" class="btn btn-primary px-5" style="z-index: 1;" disabled>Valider</button></div></form>
+

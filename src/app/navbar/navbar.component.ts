@@ -9,8 +9,19 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
 
 constructor(private router:Router){}
-  GoToInscriptionEvent() {
-    this.router.navigate(['/inscription'])
+actions :Array<any> =
+[
+  { titre: "login", route: "/login" },
+  { titre: "inscription", route: "/inscription"},
+  { titre: "identif-voiture", route: "/identif-voiture" }
+
+]
+actionCourante :any ;
+setActionCourante (a: any)
+{
+  this.actionCourante=a;
+
 }
+
 
 }

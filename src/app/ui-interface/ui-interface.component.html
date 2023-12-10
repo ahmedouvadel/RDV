@@ -2,8 +2,16 @@
 
 <!-- src/app/ui-interface/ui-interface.component.html -->
 
-<div class="container">
+<!-- your-component.component.html -->
+<div  class="landing-box d-flex justify-content-between">
+  <div  class="secondary-writing"> Réserver un rendez-vous en ligne <br >
+    <button _ngcontent-rrj-c84="" class="btn btn-primary landing-button" tabindex="0"> Cliquer Ici <img src="assets\Icon\Fill\icon-clic.png" style="height: 30px; width: 30px; cursor: pointer;">
+    </button></div><img  src="/src/assets/photo-background-voiture.jfif" alt="car" class="landing-car"></div>
+
+<div class="container"  [style.background-image]="'url(' + backgroundImageUrl + ')'" >
   <button (click)="navigateToIdentifVoiture()" class="btn btn-primary">Click ici</button>
 </div>
+
+
 
 

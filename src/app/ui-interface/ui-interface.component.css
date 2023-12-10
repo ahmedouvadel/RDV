@@ -1,7 +1,7 @@
 /* src/app/ui-interface/ui-interface.component.css */
 
 .container {
-  background-image: url('/src/assets/photo-background-voiture.jfif');
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

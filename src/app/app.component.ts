@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   showIdentifVoiture: boolean = false;
+  mato5rojech: boolean = false;
 
   constructor(private router: Router) {}
 

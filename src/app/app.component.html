@@ -1,9 +1,10 @@
 <!-- src/app/app.component.html -->
 
-<!-- src/app/app.component.html -->
+<div class="container">
+  <app-navbar *ngIf="mato5rojech"></app-navbar>
+  <router-outlet></router-outlet>
+</div>
+<button *ngIf="!mato5rojech" (click)="mato5rojech = true" class="btn btn-primary">Click ici</button>
 
-<app-navbar *ngIf="!showIdentifVoiture"></app-navbar>
-<app-ui-interface *ngIf="!showIdentifVoiture"></app-ui-interface>
-<router-outlet *ngIf="showIdentifVoiture"></router-outlet>
 
 
