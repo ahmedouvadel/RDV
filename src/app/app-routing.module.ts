@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppComponent } from './app.component';
 import { ServiceAgenceComponent } from './service-agence/service-agence.component';
 import { ServiceAgenceDivComponent } from './service-agence-div/service-agence-div.component';
+import { MapComponentComponent } from './map-component/map-component.component';
 
 const routes: Routes = [
   {path: 'AccPage', component: AppComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'navbar', component: NavbarComponent},
   {path: 'serviceAgence', component: ServiceAgenceComponent},
   {path: 'serviceAgenceDiv', component: ServiceAgenceDivComponent},
+  {path: 'map', component: MapComponentComponent},
 ];
 
 @NgModule({

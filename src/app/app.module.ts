@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { PrendreRDVComponent } from './prendre-rdv/prendre-rdv.component';
 import { ServiceAgenceComponent } from './service-agence/service-agence.component';
 import { ServiceAgenceDivComponent } from './service-agence-div/service-agence-div.component';
+import { MapComponentComponent } from './map-component/map-component.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,13 @@ import { ServiceAgenceDivComponent } from './service-agence-div/service-agence-d
     PrendreRDVComponent,
     UiIdentifVoitureComponent,
     ServiceAgenceComponent,
-    ServiceAgenceDivComponent
+    ServiceAgenceDivComponent,
+    MapComponentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
