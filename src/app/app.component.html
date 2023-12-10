@@ -1,10 +1,15 @@
-<!-- src/app/app.component.html -->
-
-<div class="container">
+<div class="container with-background">
   <app-navbar *ngIf="mato5rojech"></app-navbar>
-  <router-outlet></router-outlet>
+  <div *ngIf="!showIdentifVoiture">
+    <h1 class="main-title"><span class="word1">GAGNEZ</span> <span class="word2">DU</span> <span class="word3">TEMPS</span></h1>
+    <p class="sub-title" [ngClass]="{'centered-text': mato5rojech}">Réservez un rendez-vous
+      <br>en ligne </p>
+    <br>
+
+    <button *ngIf="!mato5rojech" (click)="navigateToIdentifVoiture()" class="btn btn-primary">Cliquer ici</button>
+  </div>
+  
+  <router-outlet
+   ></router-outlet>
+
 </div>
-<button *ngIf="!mato5rojech" (click)="mato5rojech = true" class="btn btn-primary">Click ici</button>
-
-
-

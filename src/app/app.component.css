@@ -1,2 +1,87 @@
+/* Styles pour le fond d'image */
+/* Styles pour le fond d'image */
+.with-background {
+    background-image: url('../assets/voiture-bg.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center; /* Alignement à droite en bas */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
 
 
+
+  .word1 {
+    color: #FF0000; /* Couleur pour le mot "Gagnez" */
+    font-size: 3em;
+
+  }
+
+  .word2 {
+
+    font-size: 3em;
+
+  }
+
+  .word3 {
+
+    font-size: 3em;
+  }
+
+  /* Styles pour le sous-titre */
+  .sub-title {
+    text-align: left;
+    font-size: 2.2em;
+
+    color: #110101; /* Couleur pour le mot "Gagnez" */
+  }
+
+  /* Styles pour le bouton */
+  .btn-primary {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  /* Styles supplémentaires pour agrandir le bouton */
+  .btn-primary:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform 0.3s ease;
+  }
+ /* Styles pour le texte centré à gauche lorsque mato5rojech est vrai */
+.centered-text {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 1.2em;
+    color: #FFFFFF; /* Couleur du texte en blanc pour une meilleure lisibilité */
+    width: 80%; /* Ajustez la largeur du texte selon vos besoins */
+    letter-spacing: 3px; /* Ajoute de l'espace entre les lettres (mots) */
+  }
+
+  /* Styles supplémentaires pour le bouton */
+  .btn-primary {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  /* Styles supplémentaires pour agrandir le bouton */
+  .btn-primary:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform 0.3s ease;
+  }

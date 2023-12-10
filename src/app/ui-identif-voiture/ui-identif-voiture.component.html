@@ -1,6 +1,10 @@
 <!-- your-component.component.html -->
+
 <form novalidate autocomplete="off" class="custom-form">
   <div class="container max-height-main">
+    <div class="bottom-bar d-flex">
+      <button type="button" class="btn mx-2 border px-5" (click)="Goback()">Retour</button>
+  </div>
     <h1 class="fs-2 fw-bold mb-5">Identification de votre véhicule</h1>
 
     <div class="row">
@@ -18,7 +22,6 @@
           <div class="identificateur"> Chef de Mission diplomatique (CMD) </div>
         </div>
       </div>
-
       <div class="col-lg-4 card p-2">
         <div class="d-flex align-items-center my-3">
           <div>
@@ -51,8 +54,9 @@
     </div>
 
     <div class="bottom-bar d-flex">
-      <button type="button" class="btn mx-2 border px-5">S'identifier</button>
-      <button class="btn btn-primary px-5" style="z-index: 1;" disabled>Suivant</button>
+      <button type="button" class="btn mx-2 border px-5" (click)="navigateToInscription()">S'identifier</button>
+      <button class="btn btn-primary px-5" style="z-index: 1;" (click)="navigateToserviceAgence()">Suivant</button>
     </div>
   </div>
 </form>
+

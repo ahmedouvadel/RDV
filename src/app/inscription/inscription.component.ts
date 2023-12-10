@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inscription',
@@ -8,8 +9,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class InscriptionComponent {
   customForm : FormGroup;
+  handleFileInput(event: any) {
+    const files = event.target.files;
+    // Ajoutez le code pour traiter les fichiers ici
+    console.log(files);
+  }
 
-  constructor(private fb: FormBuilder) {
+  navigateBack() {
+    this.router.navigate(['/identif-voiture']); }
+  constructor(private fb: FormBuilder,private router: Router) {
     this.customForm = this.fb.group({
       gender: ['', Validators.required],
       firstName: ['', Validators.required],

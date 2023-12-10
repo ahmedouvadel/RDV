@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { LoginComponent } from './login/login.component';
 import { PrendreRDVComponent } from './prendre-rdv/prendre-rdv.component';
+import { ServiceAgenceComponent } from './service-agence/service-agence.component';
+import { ServiceAgenceDivComponent } from './service-agence-div/service-agence-div.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PrendreRDVComponent } from './prendre-rdv/prendre-rdv.component';
     InscriptionComponent,
     LoginComponent,
     PrendreRDVComponent,
-    UiIdentifVoitureComponent
+    UiIdentifVoitureComponent,
+    ServiceAgenceComponent,
+    ServiceAgenceDivComponent
   ],
   imports: [
     BrowserModule,

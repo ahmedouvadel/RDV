@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ui-interface.component.css']
 })
 export class UiInterfaceComponent {
-  backgroundImageUrl = '/src/assets/photo-background-voiture.jfif';
+  
 
   constructor(private router: Router) {}
 
